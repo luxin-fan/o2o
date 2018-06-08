@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--这里声明是要按照mybatis-3-mapper.dtd规范来命名标签-->
+<mapper namespace="com.fan.o2o.dao.ShopCategoryDao">
+	<!--这里就是将配置文件与接口一一对应起来，我希望返回的是一行行实体类-->
+	<select id="queryShopCategory" resultType="com.fan.o2o.entity.ShopCategory">
+		SELECT
+		shop_category_id,
+		shop_category_name,
+		shop_category_desc,
+		shop_category_img,
+		priority,
+		create_time,
+		last_edit_time,
+		parent_id
+		FROM
+		tb_shop_category
+		<where>
+			<if test="shopCategoryCondition == null">
+				and parent_id is null
+			</if>
+			<if test="shopCategoryCondition != null">
+				and parent_id is not null
+			</if>
+			<if
+				test="shopCategoryCondition != null and shopCategoryCondition.parent != null and shopCategoryCondition.parent.shopCategoryId != null">
+				and parent_id = #{shopCategoryCondition.parent.shopCategoryId}
+			</if>
+		</where>
+		ORDER BY
+		priority DESC
+	</select>
+</mapper>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--这里声明是要按照mybatis-3-mapper.dtd规范来命名标签-->
+<mapper namespace="com.fan.o2o.dao.AreaDao">
+	<!--这里就是将配置文件与接口一一对应起来，我希望返回的是一行行实体类-->
+	<select id="queryArea" resultType="com.fan.o2o.entity.Area">
+		SELECT area_id, area_name,
+		priority, create_time, last_edit_time
+		FROM tb_area
+		ORDER BY priority
+		DESC
+	</select>
+</mapper>
