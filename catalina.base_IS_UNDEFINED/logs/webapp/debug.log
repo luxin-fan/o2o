@@ -1,0 +1,286 @@
+2018-06-13 17:17:56.938 [main] DEBUG com.fan.o2o.dao.AwardDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 17:18:01.876 [main] DEBUG com.fan.o2o.dao.AwardDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 17:18:02.884 [main] DEBUG com.fan.o2o.dao.AwardDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 17:18:03.822 [main] DEBUG com.fan.o2o.dao.AwardDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 17:18:04.483 [main] DEBUG com.fan.o2o.dao.AwardDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 17:21:42.300 [main] DEBUG com.fan.o2o.dao.AwardDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 17:21:45.934 [main] DEBUG com.fan.o2o.dao.AwardDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 17:21:46.940 [main] DEBUG com.fan.o2o.dao.AwardDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 17:21:47.641 [main] DEBUG com.fan.o2o.dao.AwardDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 17:21:48.283 [main] DEBUG com.fan.o2o.dao.AwardDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 22:00:35.304 [main] DEBUG com.fan.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 22:23:54.897 [main] DEBUG com.fan.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 22:31:51.623 [main] DEBUG com.fan.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 22:31:56.813 [main] DEBUG com.fan.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2018-06-13 22:31:56.844 [main] DEBUG com.fan.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2018-06-13 22:31:56.940 [main] DEBUG com.fan.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2018-06-13 22:32:28.630 [main] DEBUG com.fan.o2o.dao.AwardDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 22:32:33.639 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - ==>  Preparing: INSERT INTO tb_award(award_name,award_desc,award_img, point,priority,create_time, last_edit_time,enable_status,shop_id) VALUES (?,?,?, ?,?,?, ?,?,?) 
+2018-06-13 22:32:33.683 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - ==> Parameters: 测试一(String), null, test1(String), 5(Integer), 1(Integer), 2018-06-13 22:32:32.895(Timestamp), 2018-06-13 22:32:32.895(Timestamp), 1(Integer), 1(Long)
+2018-06-13 22:32:34.059 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - <==    Updates: 1
+2018-06-13 22:32:34.065 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - ==>  Preparing: INSERT INTO tb_award(award_name,award_desc,award_img, point,priority,create_time, last_edit_time,enable_status,shop_id) VALUES (?,?,?, ?,?,?, ?,?,?) 
+2018-06-13 22:32:34.066 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - ==> Parameters: 测试二(String), null, test2(String), 2(Integer), 2(Integer), 2018-06-13 22:32:34.065(Timestamp), 2018-06-13 22:32:34.065(Timestamp), 0(Integer), 1(Long)
+2018-06-13 22:32:34.152 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - <==    Updates: 1
+2018-06-13 22:32:34.204 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award ORDER BY priority DESC LIMIT ?,?; 
+2018-06-13 22:32:34.204 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==> Parameters: 0(Integer), 3(Integer)
+2018-06-13 22:32:34.243 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - <==      Total: 2
+2018-06-13 22:32:34.269 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_name like '%测试一%' ORDER BY priority DESC LIMIT ?,?; 
+2018-06-13 22:32:34.272 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==> Parameters: 0(Integer), 1(Integer)
+2018-06-13 22:32:34.305 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - <==      Total: 1
+2018-06-13 22:32:34.306 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_id = ? 
+2018-06-13 22:32:34.308 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - ==> Parameters: 1(Long)
+2018-06-13 22:32:34.334 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - <==      Total: 1
+2018-06-13 22:32:34.340 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_name like '%测试一%' ORDER BY priority DESC LIMIT ?,?; 
+2018-06-13 22:32:34.341 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==> Parameters: 0(Integer), 1(Integer)
+2018-06-13 22:32:34.366 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - <==      Total: 1
+2018-06-13 22:32:34.368 [main] DEBUG com.fan.o2o.dao.AwardDao.updateAward - ==>  Preparing: UPDATE tb_award SET award_name=?, award_img=?, point=?, priority=?, last_edit_time=?, enable_status=? WHERE award_id=? AND shop_id=? 
+2018-06-13 22:32:34.369 [main] DEBUG com.fan.o2o.dao.AwardDao.updateAward - ==> Parameters: 第一个测试奖品(String), test1(String), 5(Integer), 1(Integer), 2018-06-13 22:32:33.0(Timestamp), 1(Integer), 1(Long), 1(Long)
+2018-06-13 22:32:34.456 [main] DEBUG com.fan.o2o.dao.AwardDao.updateAward - <==    Updates: 1
+2018-06-13 22:32:34.456 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_id = ? 
+2018-06-13 22:32:34.456 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - ==> Parameters: 1(Long)
+2018-06-13 22:32:34.489 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - <==      Total: 1
+2018-06-13 22:32:34.493 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_name like '%测试%' ORDER BY priority DESC LIMIT ?,?; 
+2018-06-13 22:32:34.494 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==> Parameters: 0(Integer), 2(Integer)
+2018-06-13 22:32:34.528 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - <==      Total: 2
+2018-06-13 22:32:34.529 [main] DEBUG com.fan.o2o.dao.AwardDao.deleteAward - ==>  Preparing: DELETE FROM tb_award WHERE award_id = ? AND shop_id=? 
+2018-06-13 22:32:34.530 [main] DEBUG com.fan.o2o.dao.AwardDao.deleteAward - ==> Parameters: 2(Long), 1(Long)
+2018-06-13 22:32:34.599 [main] DEBUG com.fan.o2o.dao.AwardDao.deleteAward - <==    Updates: 1
+2018-06-13 22:32:34.600 [main] DEBUG com.fan.o2o.dao.AwardDao.deleteAward - ==>  Preparing: DELETE FROM tb_award WHERE award_id = ? AND shop_id=? 
+2018-06-13 22:32:34.600 [main] DEBUG com.fan.o2o.dao.AwardDao.deleteAward - ==> Parameters: 1(Long), 1(Long)
+2018-06-13 22:32:34.692 [main] DEBUG com.fan.o2o.dao.AwardDao.deleteAward - <==    Updates: 1
+2018-06-13 22:33:47.471 [main] DEBUG com.fan.o2o.dao.AwardDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 22:33:52.579 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - ==>  Preparing: INSERT INTO tb_award(award_name,award_desc,award_img, point,priority,create_time, last_edit_time,enable_status,shop_id) VALUES (?,?,?, ?,?,?, ?,?,?) 
+2018-06-13 22:33:52.617 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - ==> Parameters: 测试一(String), null, test1(String), 5(Integer), 1(Integer), 2018-06-13 22:33:51.84(Timestamp), 2018-06-13 22:33:51.84(Timestamp), 1(Integer), 1(Long)
+2018-06-13 22:33:52.702 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - <==    Updates: 1
+2018-06-13 22:33:52.712 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - ==>  Preparing: INSERT INTO tb_award(award_name,award_desc,award_img, point,priority,create_time, last_edit_time,enable_status,shop_id) VALUES (?,?,?, ?,?,?, ?,?,?) 
+2018-06-13 22:33:52.714 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - ==> Parameters: 测试二(String), null, test2(String), 2(Integer), 2(Integer), 2018-06-13 22:33:52.712(Timestamp), 2018-06-13 22:33:52.712(Timestamp), 0(Integer), 1(Long)
+2018-06-13 22:33:52.779 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - <==    Updates: 1
+2018-06-13 22:33:52.838 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award ORDER BY priority DESC LIMIT ?,?; 
+2018-06-13 22:33:52.839 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==> Parameters: 0(Integer), 3(Integer)
+2018-06-13 22:33:52.885 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - <==      Total: 2
+2018-06-13 22:33:52.892 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardCount - ==>  Preparing: SELECT count(1) FROM tb_award 
+2018-06-13 22:33:52.893 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardCount - ==> Parameters: 
+2018-06-13 22:33:52.921 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardCount - <==      Total: 1
+2018-06-13 22:33:52.940 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_name like '%测试一%' ORDER BY priority DESC LIMIT ?,?; 
+2018-06-13 22:33:52.941 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==> Parameters: 0(Integer), 1(Integer)
+2018-06-13 22:33:52.967 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - <==      Total: 1
+2018-06-13 22:33:52.968 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_id = ? 
+2018-06-13 22:33:52.969 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - ==> Parameters: 3(Long)
+2018-06-13 22:33:52.998 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - <==      Total: 1
+2018-06-13 22:33:53.025 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_name like '%测试一%' ORDER BY priority DESC LIMIT ?,?; 
+2018-06-13 22:33:53.026 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==> Parameters: 0(Integer), 1(Integer)
+2018-06-13 22:33:53.057 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - <==      Total: 1
+2018-06-13 22:33:53.089 [main] DEBUG com.fan.o2o.dao.AwardDao.updateAward - ==>  Preparing: UPDATE tb_award SET award_name=?, award_img=?, point=?, priority=?, last_edit_time=?, enable_status=? WHERE award_id=? AND shop_id=? 
+2018-06-13 22:33:53.090 [main] DEBUG com.fan.o2o.dao.AwardDao.updateAward - ==> Parameters: 第一个测试奖品(String), test1(String), 5(Integer), 1(Integer), 2018-06-13 22:33:52.0(Timestamp), 1(Integer), 3(Long), 1(Long)
+2018-06-13 22:33:53.157 [main] DEBUG com.fan.o2o.dao.AwardDao.updateAward - <==    Updates: 1
+2018-06-13 22:33:53.159 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_id = ? 
+2018-06-13 22:33:53.159 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - ==> Parameters: 3(Long)
+2018-06-13 22:33:53.190 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - <==      Total: 1
+2018-06-13 22:35:46.808 [main] DEBUG com.fan.o2o.dao.AwardDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 22:35:51.815 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - ==>  Preparing: INSERT INTO tb_award(award_name,award_desc,award_img, point,priority,create_time, last_edit_time,enable_status,shop_id) VALUES (?,?,?, ?,?,?, ?,?,?) 
+2018-06-13 22:35:51.853 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - ==> Parameters: 测试一(String), null, test1(String), 5(Integer), 1(Integer), 2018-06-13 22:35:51.108(Timestamp), 2018-06-13 22:35:51.108(Timestamp), 1(Integer), 1(Long)
+2018-06-13 22:35:51.934 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - <==    Updates: 1
+2018-06-13 22:35:51.945 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - ==>  Preparing: INSERT INTO tb_award(award_name,award_desc,award_img, point,priority,create_time, last_edit_time,enable_status,shop_id) VALUES (?,?,?, ?,?,?, ?,?,?) 
+2018-06-13 22:35:51.948 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - ==> Parameters: 测试二(String), null, test2(String), 2(Integer), 2(Integer), 2018-06-13 22:35:51.944(Timestamp), 2018-06-13 22:35:51.944(Timestamp), 0(Integer), 1(Long)
+2018-06-13 22:35:52.012 [main] DEBUG com.fan.o2o.dao.AwardDao.insertAward - <==    Updates: 1
+2018-06-13 22:35:52.063 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award ORDER BY priority DESC LIMIT ?,?; 
+2018-06-13 22:35:52.064 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==> Parameters: 0(Integer), 3(Integer)
+2018-06-13 22:35:52.108 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - <==      Total: 3
+2018-06-13 22:35:52.114 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardCount - ==>  Preparing: SELECT count(1) FROM tb_award 
+2018-06-13 22:35:52.115 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardCount - ==> Parameters: 
+2018-06-13 22:35:52.144 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardCount - <==      Total: 1
+2018-06-13 22:35:52.149 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_name like '%测试%' ORDER BY priority DESC LIMIT ?,?; 
+2018-06-13 22:35:52.151 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==> Parameters: 0(Integer), 3(Integer)
+2018-06-13 22:35:52.189 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - <==      Total: 3
+2018-06-13 22:35:52.190 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardCount - ==>  Preparing: SELECT count(1) FROM tb_award WHERE award_name like '%测试%' 
+2018-06-13 22:35:52.191 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardCount - ==> Parameters: 
+2018-06-13 22:35:52.219 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardCount - <==      Total: 1
+2018-06-13 22:35:52.278 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_name like '%测试一%' ORDER BY priority DESC LIMIT ?,?; 
+2018-06-13 22:35:52.280 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==> Parameters: 0(Integer), 1(Integer)
+2018-06-13 22:35:52.306 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - <==      Total: 1
+2018-06-13 22:35:52.317 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_id = ? 
+2018-06-13 22:35:52.317 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - ==> Parameters: 5(Long)
+2018-06-13 22:35:52.352 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - <==      Total: 1
+2018-06-13 22:35:52.368 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_name like '%测试一%' ORDER BY priority DESC LIMIT ?,?; 
+2018-06-13 22:35:52.368 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - ==> Parameters: 0(Integer), 1(Integer)
+2018-06-13 22:35:52.399 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardList - <==      Total: 1
+2018-06-13 22:35:52.405 [main] DEBUG com.fan.o2o.dao.AwardDao.updateAward - ==>  Preparing: UPDATE tb_award SET award_name=?, award_img=?, point=?, priority=?, last_edit_time=?, enable_status=? WHERE award_id=? AND shop_id=? 
+2018-06-13 22:35:52.409 [main] DEBUG com.fan.o2o.dao.AwardDao.updateAward - ==> Parameters: 第一个测试奖品(String), test1(String), 5(Integer), 1(Integer), 2018-06-13 22:35:51.0(Timestamp), 1(Integer), 5(Long), 1(Long)
+2018-06-13 22:35:52.473 [main] DEBUG com.fan.o2o.dao.AwardDao.updateAward - <==    Updates: 1
+2018-06-13 22:35:52.474 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_id = ? 
+2018-06-13 22:35:52.475 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - ==> Parameters: 5(Long)
+2018-06-13 22:35:52.505 [main] DEBUG com.fan.o2o.dao.AwardDao.queryAwardByAwardId - <==      Total: 1
+2018-06-13 22:48:41.625 [main] DEBUG com.fan.o2o.dao.UserAwardMapDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 22:48:48.790 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?) 
+2018-06-13 22:48:48.841 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2018-06-13 22:48:47.993(Timestamp), 1(Integer), 1(Integer)
+2018-06-13 22:48:49.342 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?; 
+2018-06-13 22:48:49.350 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2018-06-13 22:48:49.398 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 0
+2018-06-13 22:48:49.412 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%测试%' ORDER BY uam.create_time desc LIMIT ?,?; 
+2018-06-13 22:48:49.413 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 1(Integer)
+2018-06-13 22:48:49.441 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 0
+2018-06-13 22:49:56.575 [main] DEBUG com.fan.o2o.dao.UserAwardMapDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 22:50:02.067 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?) 
+2018-06-13 22:50:02.114 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 3(Long), 1(Long), 1(Long), 2018-06-13 22:50:01.374(Timestamp), 1(Integer), 1(Integer)
+2018-06-13 22:50:02.180 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2018-06-13 22:50:02.192 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?) 
+2018-06-13 22:50:02.195 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 3(Long), 1(Long), 1(Long), 2018-06-13 22:50:02.191(Timestamp), 0(Integer), 1(Integer)
+2018-06-13 22:50:02.265 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2018-06-13 22:50:02.342 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?; 
+2018-06-13 22:50:02.343 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2018-06-13 22:50:02.385 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 2
+2018-06-13 22:50:02.395 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id 
+2018-06-13 22:50:02.395 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2018-06-13 22:50:02.424 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2018-06-13 22:50:02.436 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%测试%' ORDER BY uam.create_time desc LIMIT ?,?; 
+2018-06-13 22:50:02.438 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2018-06-13 22:50:02.469 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 2
+2018-06-13 22:50:02.471 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%测试%' 
+2018-06-13 22:50:02.472 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2018-06-13 22:50:02.499 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2018-06-13 22:50:02.557 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapById - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and user_award_id = ? 
+2018-06-13 22:50:02.558 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapById - ==> Parameters: 3(Long)
+2018-06-13 22:50:02.587 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapById - <==      Total: 1
+2018-06-13 22:50:02.637 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%测试%' ORDER BY uam.create_time desc LIMIT ?,?; 
+2018-06-13 22:50:02.638 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 1(Integer)
+2018-06-13 22:50:02.668 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 1
+2018-06-13 22:50:02.669 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.updateUserAwardMap - ==>  Preparing: UPDATE tb_user_award_map SET used_status = ?, operator_id=? WHERE user_award_id = ? AND user_id = ? 
+2018-06-13 22:50:02.670 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.updateUserAwardMap - ==> Parameters: 1(Integer), 1(Long), 3(Long), 1(Long)
+2018-06-13 22:50:02.762 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.updateUserAwardMap - <==    Updates: 1
+2018-06-13 22:51:37.964 [main] DEBUG com.fan.o2o.dao.UserAwardMapDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 22:51:43.660 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?) 
+2018-06-13 22:51:43.705 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 3(Long), 1(Long), 1(Long), 2018-06-13 22:51:42.913(Timestamp), 1(Integer), 1(Integer)
+2018-06-13 22:51:43.785 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2018-06-13 22:51:43.795 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?) 
+2018-06-13 22:51:43.798 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 3(Long), 1(Long), 1(Long), 2018-06-13 22:51:43.795(Timestamp), 0(Integer), 1(Integer)
+2018-06-13 22:51:43.856 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2018-06-13 22:51:43.932 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?; 
+2018-06-13 22:51:43.935 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2018-06-13 22:51:43.997 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 3
+2018-06-13 22:51:44.062 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%测试%' ORDER BY uam.create_time desc LIMIT ?,?; 
+2018-06-13 22:51:44.064 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 1(Integer)
+2018-06-13 22:51:44.091 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 1
+2018-06-13 22:51:44.092 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.updateUserAwardMap - ==>  Preparing: UPDATE tb_user_award_map SET used_status = ?, operator_id=? WHERE user_award_id = ? AND user_id = ? 
+2018-06-13 22:51:44.093 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.updateUserAwardMap - ==> Parameters: 1(Integer), 1(Long), 5(Long), 1(Long)
+2018-06-13 22:51:44.154 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.updateUserAwardMap - <==    Updates: 1
+2018-06-13 22:52:39.702 [main] DEBUG com.fan.o2o.dao.UserAwardMapDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 22:52:45.882 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?) 
+2018-06-13 22:52:45.933 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 3(Long), 1(Long), 1(Long), 2018-06-13 22:52:45.179(Timestamp), 1(Integer), 1(Integer)
+2018-06-13 22:52:46.005 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2018-06-13 22:52:46.016 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?) 
+2018-06-13 22:52:46.018 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 3(Long), 1(Long), 1(Long), 2018-06-13 22:52:46.015(Timestamp), 0(Integer), 1(Integer)
+2018-06-13 22:52:46.088 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2018-06-13 22:52:46.181 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?; 
+2018-06-13 22:52:46.189 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2018-06-13 22:52:46.235 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 3
+2018-06-13 22:52:46.247 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id 
+2018-06-13 22:52:46.247 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2018-06-13 22:52:46.273 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2018-06-13 22:52:46.279 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%测试%' ORDER BY uam.create_time desc LIMIT ?,?; 
+2018-06-13 22:52:46.280 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2018-06-13 22:52:46.312 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 3
+2018-06-13 22:52:46.314 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%测试%' 
+2018-06-13 22:52:46.317 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2018-06-13 22:52:46.345 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2018-06-13 22:52:46.346 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapById - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and user_award_id = ? 
+2018-06-13 22:52:46.346 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapById - ==> Parameters: 7(Long)
+2018-06-13 22:52:46.379 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapById - <==      Total: 1
+2018-06-13 22:52:46.387 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%测试%' ORDER BY uam.create_time desc LIMIT ?,?; 
+2018-06-13 22:52:46.388 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 1(Integer)
+2018-06-13 22:52:46.420 [main] DEBUG c.f.o2o.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 1
+2018-06-13 22:52:46.421 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.updateUserAwardMap - ==>  Preparing: UPDATE tb_user_award_map SET used_status = ?, operator_id=? WHERE user_award_id = ? AND user_id = ? 
+2018-06-13 22:52:46.422 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.updateUserAwardMap - ==> Parameters: 1(Integer), 1(Long), 7(Long), 1(Long)
+2018-06-13 22:52:46.487 [main] DEBUG com.fan.o2o.dao.UserAwardMapDao.updateUserAwardMap - <==    Updates: 1
+2018-06-13 23:03:45.102 [main] DEBUG com.fan.o2o.dao.UserProductMapDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 23:03:50.482 [main] DEBUG c.f.o2o.dao.UserProductMapDao.insertUserProductMap - ==>  Preparing: INSERT INTO tb_user_product_map(user_id,product_id,shop_id,operator_id, create_time,point) VALUES (?,?,?,?, ?,?) 
+2018-06-13 23:03:50.529 [main] DEBUG c.f.o2o.dao.UserProductMapDao.insertUserProductMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2018-06-13 23:03:49.663(Timestamp), null
+2018-06-13 23:03:50.596 [main] DEBUG c.f.o2o.dao.UserProductMapDao.insertUserProductMap - <==    Updates: 1
+2018-06-13 23:03:50.609 [main] DEBUG c.f.o2o.dao.UserProductMapDao.insertUserProductMap - ==>  Preparing: INSERT INTO tb_user_product_map(user_id,product_id,shop_id,operator_id, create_time,point) VALUES (?,?,?,?, ?,?) 
+2018-06-13 23:03:50.613 [main] DEBUG c.f.o2o.dao.UserProductMapDao.insertUserProductMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2018-06-13 23:03:50.608(Timestamp), null
+2018-06-13 23:03:50.679 [main] DEBUG c.f.o2o.dao.UserProductMapDao.insertUserProductMap - <==    Updates: 1
+2018-06-13 23:03:50.680 [main] DEBUG c.f.o2o.dao.UserProductMapDao.insertUserProductMap - ==>  Preparing: INSERT INTO tb_user_product_map(user_id,product_id,shop_id,operator_id, create_time,point) VALUES (?,?,?,?, ?,?) 
+2018-06-13 23:03:50.681 [main] DEBUG c.f.o2o.dao.UserProductMapDao.insertUserProductMap - ==> Parameters: 1(Long), 2(Long), 1(Long), 1(Long), 2018-06-13 23:03:50.68(Timestamp), null
+2018-06-13 23:03:50.748 [main] DEBUG c.f.o2o.dao.UserProductMapDao.insertUserProductMap - <==    Updates: 1
+2018-06-13 23:03:50.749 [main] DEBUG c.f.o2o.dao.UserProductMapDao.insertUserProductMap - ==>  Preparing: INSERT INTO tb_user_product_map(user_id,product_id,shop_id,operator_id, create_time,point) VALUES (?,?,?,?, ?,?) 
+2018-06-13 23:03:50.754 [main] DEBUG c.f.o2o.dao.UserProductMapDao.insertUserProductMap - ==> Parameters: 1(Long), 7(Long), 2(Long), 1(Long), 2018-06-13 23:03:50.749(Timestamp), null
+2018-06-13 23:03:50.820 [main] DEBUG c.f.o2o.dao.UserProductMapDao.insertUserProductMap - <==    Updates: 1
+2018-06-13 23:03:50.898 [main] DEBUG c.f.o.d.UserProductMapDao.queryUserProductMapList - ==>  Preparing: SELECT upm.user_product_id, upm.create_time, upm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, p.product_id, p.product_name, operator.user_id AS operator_id, operator.name AS operator_name FROM tb_user_product_map upm, tb_person_info buyer, tb_shop s, tb_product p, tb_person_info operator WHERE upm.user_id = buyer.user_id and upm.shop_id = s.shop_id and upm.product_id = p.product_id and upm.operator_id = operator.user_id and buyer.name like '%测试%' ORDER BY upm.create_time desc LIMIT ?,?; 
+2018-06-13 23:03:50.900 [main] DEBUG c.f.o.d.UserProductMapDao.queryUserProductMapList - ==> Parameters: 0(Integer), 2(Integer)
+2018-06-13 23:03:50.944 [main] DEBUG c.f.o.d.UserProductMapDao.queryUserProductMapList - <==      Total: 2
+2018-06-13 23:03:50.956 [main] DEBUG c.f.o.d.UserProductMapDao.queryUserProductMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_product_map upm, tb_person_info buyer, tb_shop s, tb_product p, tb_person_info operator WHERE upm.user_id = buyer.user_id and upm.shop_id = s.shop_id and upm.product_id = p.product_id and upm.operator_id = operator.user_id and buyer.name like '%测试%' 
+2018-06-13 23:03:50.957 [main] DEBUG c.f.o.d.UserProductMapDao.queryUserProductMapCount - ==> Parameters: 
+2018-06-13 23:03:50.986 [main] DEBUG c.f.o.d.UserProductMapDao.queryUserProductMapCount - <==      Total: 1
+2018-06-13 23:03:50.989 [main] DEBUG c.f.o.d.UserProductMapDao.queryUserProductMapList - ==>  Preparing: SELECT upm.user_product_id, upm.create_time, upm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, p.product_id, p.product_name, operator.user_id AS operator_id, operator.name AS operator_name FROM tb_user_product_map upm, tb_person_info buyer, tb_shop s, tb_product p, tb_person_info operator WHERE upm.user_id = buyer.user_id and upm.shop_id = s.shop_id and upm.product_id = p.product_id and upm.operator_id = operator.user_id and upm.shop_id = ? and buyer.name like '%测试%' ORDER BY upm.create_time desc LIMIT ?,?; 
+2018-06-13 23:03:51.004 [main] DEBUG c.f.o.d.UserProductMapDao.queryUserProductMapList - ==> Parameters: 1(Long), 0(Integer), 3(Integer)
+2018-06-13 23:03:51.046 [main] DEBUG c.f.o.d.UserProductMapDao.queryUserProductMapList - <==      Total: 3
+2018-06-13 23:03:51.047 [main] DEBUG c.f.o.d.UserProductMapDao.queryUserProductMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_product_map upm, tb_person_info buyer, tb_shop s, tb_product p, tb_person_info operator WHERE upm.user_id = buyer.user_id and upm.shop_id = s.shop_id and upm.product_id = p.product_id and upm.operator_id = operator.user_id and upm.shop_id = ? and buyer.name like '%测试%' 
+2018-06-13 23:03:51.048 [main] DEBUG c.f.o.d.UserProductMapDao.queryUserProductMapCount - ==> Parameters: 1(Long)
+2018-06-13 23:03:51.074 [main] DEBUG c.f.o.d.UserProductMapDao.queryUserProductMapCount - <==      Total: 1
+2018-06-13 23:14:40.064 [main] DEBUG com.fan.o2o.dao.ProductSellDailyDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 23:14:46.805 [main] DEBUG c.f.o.d.ProductSellDailyDao.insertProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT product_id,shop_id,date_format(create_time,'%Y-%m-%d'),count(product_id) AS total FROM tb_user_product_map WHERE date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day) GROUP BY product_id) 
+2018-06-13 23:14:46.873 [main] DEBUG c.f.o.d.ProductSellDailyDao.insertProductSellDaily - ==> Parameters: 
+2018-06-13 23:14:47.076 [main] DEBUG c.f.o.d.ProductSellDailyDao.insertProductSellDaily - <==    Updates: 3
+2018-06-13 23:14:47.197 [main] DEBUG c.f.o.d.P.queryProductSellDailyList - ==>  Preparing: SELECT psd.product_sell_daily_id, psd.create_time, psd.total, s.shop_id, s.shop_name, p.product_id, p.product_name FROM tb_product_sell_daily psd, tb_shop s, tb_product p WHERE psd.shop_id = s.shop_id and psd.product_id = p.product_id and psd.shop_id = ? order by psd.product_id, psd.create_time 
+2018-06-13 23:14:47.201 [main] DEBUG c.f.o.d.P.queryProductSellDailyList - ==> Parameters: 1(Long)
+2018-06-13 23:28:39.135 [main] DEBUG com.fan.o2o.dao.UserShopMapDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 23:28:45.988 [main] DEBUG com.fan.o2o.dao.UserShopMapDao.insertUserShopMap - ==>  Preparing: INSERT INTO tb_user_shop_map(user_id,shop_id, create_time,point) VALUES (?,?, ?,?) 
+2018-06-13 23:28:46.048 [main] DEBUG com.fan.o2o.dao.UserShopMapDao.insertUserShopMap - ==> Parameters: 1(Long), 1(Long), 2018-06-13 23:28:45.269(Timestamp), 1(Integer)
+2018-06-13 23:28:46.132 [main] DEBUG com.fan.o2o.dao.UserShopMapDao.insertUserShopMap - <==    Updates: 1
+2018-06-13 23:28:46.142 [main] DEBUG com.fan.o2o.dao.UserShopMapDao.insertUserShopMap - ==>  Preparing: INSERT INTO tb_user_shop_map(user_id,shop_id, create_time,point) VALUES (?,?, ?,?) 
+2018-06-13 23:28:46.144 [main] DEBUG com.fan.o2o.dao.UserShopMapDao.insertUserShopMap - ==> Parameters: 7(Long), 8(Long), 2018-06-13 23:28:46.142(Timestamp), 1(Integer)
+2018-06-13 23:28:46.218 [main] DEBUG com.fan.o2o.dao.UserShopMapDao.insertUserShopMap - <==    Updates: 1
+2018-06-13 23:28:46.315 [main] DEBUG c.fan.o2o.dao.UserShopMapDao.queryUserShopMapList - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id LIMIT ?,?; 
+2018-06-13 23:28:46.316 [main] DEBUG c.fan.o2o.dao.UserShopMapDao.queryUserShopMapList - ==> Parameters: 0(Integer), 2(Integer)
+2018-06-13 23:28:46.368 [main] DEBUG c.fan.o2o.dao.UserShopMapDao.queryUserShopMapList - <==      Total: 2
+2018-06-13 23:28:46.377 [main] DEBUG c.fan.o2o.dao.UserShopMapDao.queryUserShopMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id 
+2018-06-13 23:28:46.378 [main] DEBUG c.fan.o2o.dao.UserShopMapDao.queryUserShopMapCount - ==> Parameters: 
+2018-06-13 23:28:46.410 [main] DEBUG c.fan.o2o.dao.UserShopMapDao.queryUserShopMapCount - <==      Total: 1
+2018-06-13 23:28:46.415 [main] DEBUG c.fan.o2o.dao.UserShopMapDao.queryUserShopMapList - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.shop_id = ? LIMIT ?,?; 
+2018-06-13 23:28:46.416 [main] DEBUG c.fan.o2o.dao.UserShopMapDao.queryUserShopMapList - ==> Parameters: 8(Long), 0(Integer), 3(Integer)
+2018-06-13 23:28:46.457 [main] DEBUG c.fan.o2o.dao.UserShopMapDao.queryUserShopMapList - <==      Total: 1
+2018-06-13 23:28:46.460 [main] DEBUG c.fan.o2o.dao.UserShopMapDao.queryUserShopMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.shop_id = ? 
+2018-06-13 23:28:46.460 [main] DEBUG c.fan.o2o.dao.UserShopMapDao.queryUserShopMapCount - ==> Parameters: 8(Long)
+2018-06-13 23:28:46.486 [main] DEBUG c.fan.o2o.dao.UserShopMapDao.queryUserShopMapCount - <==      Total: 1
+2018-06-13 23:28:46.502 [main] DEBUG com.fan.o2o.dao.UserShopMapDao.queryUserShopMap - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.user_id = ? and usm.shop_id = ? 
+2018-06-13 23:28:46.504 [main] DEBUG com.fan.o2o.dao.UserShopMapDao.queryUserShopMap - ==> Parameters: 1(Long), 1(Long)
+2018-06-13 23:28:46.535 [main] DEBUG com.fan.o2o.dao.UserShopMapDao.queryUserShopMap - <==      Total: 1
+2018-06-13 23:28:46.543 [main] DEBUG com.fan.o2o.dao.UserShopMapDao.queryUserShopMap - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.user_id = ? and usm.shop_id = ? 
+2018-06-13 23:28:46.544 [main] DEBUG com.fan.o2o.dao.UserShopMapDao.queryUserShopMap - ==> Parameters: 1(Long), 1(Long)
+2018-06-13 23:28:46.574 [main] DEBUG com.fan.o2o.dao.UserShopMapDao.queryUserShopMap - <==      Total: 1
+2018-06-13 23:28:46.576 [main] DEBUG c.f.o2o.dao.UserShopMapDao.updateUserShopMapPoint - ==>  Preparing: UPDATE tb_user_shop_map SET point=? where user_id = ? AND shop_id = ? 
+2018-06-13 23:28:46.576 [main] DEBUG c.f.o2o.dao.UserShopMapDao.updateUserShopMapPoint - ==> Parameters: 2(Integer), 1(Long), 1(Long)
+2018-06-13 23:28:46.651 [main] DEBUG c.f.o2o.dao.UserShopMapDao.updateUserShopMapPoint - <==    Updates: 1
+2018-06-13 23:36:45.021 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDaoTest - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-13 23:36:51.575 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.insertShopAuthMap - ==>  Preparing: INSERT INTO tb_shop_auth_map(employee_id,shop_id, title,title_flag,create_time,last_edit_time,enable_status) VALUES (?,?, ?,?,?,?,?) 
+2018-06-13 23:36:51.649 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.insertShopAuthMap - ==> Parameters: 1(Long), 1(Long), CEO(String), 1(Integer), 2018-06-13 23:36:50.767(Timestamp), 2018-06-13 23:36:50.767(Timestamp), 1(Integer)
+2018-06-13 23:36:51.745 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.insertShopAuthMap - <==    Updates: 1
+2018-06-13 23:36:51.752 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.insertShopAuthMap - ==>  Preparing: INSERT INTO tb_shop_auth_map(employee_id,shop_id, title,title_flag,create_time,last_edit_time,enable_status) VALUES (?,?, ?,?,?,?,?) 
+2018-06-13 23:36:51.754 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.insertShopAuthMap - ==> Parameters: 1(Long), 2(Long), 打工仔(String), 2(Integer), 2018-06-13 23:36:51.752(Timestamp), 2018-06-13 23:36:51.752(Timestamp), 0(Integer)
+2018-06-13 23:36:51.816 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.insertShopAuthMap - <==    Updates: 1
+2018-06-13 23:36:51.832 [main] DEBUG c.f.o.d.S.queryShopAuthMapListByShopId - ==>  Preparing: SELECT smap.shop_auth_id, smap.title, smap.title_flag, smap.create_time, smap.last_edit_time, smap.enable_status, p.user_id, p.name, s.shop_id, s.shop_name FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ? LIMIT ?,?; 
+2018-06-13 23:36:51.833 [main] DEBUG c.f.o.d.S.queryShopAuthMapListByShopId - ==> Parameters: 1(Long), 0(Integer), 2(Integer)
+2018-06-13 23:36:51.878 [main] DEBUG c.f.o.d.S.queryShopAuthMapListByShopId - <==      Total: 1
+2018-06-13 23:36:51.888 [main] DEBUG c.fan.o2o.dao.ShopAuthMapDao.queryShopAuthMapById - ==>  Preparing: SELECT smap.shop_auth_id, smap.title, smap.title_flag, smap.create_time, smap.last_edit_time, smap.enable_status, p.user_id, p.name, s.shop_id, s.shop_name FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_auth_id = ?; 
+2018-06-13 23:36:51.889 [main] DEBUG c.fan.o2o.dao.ShopAuthMapDao.queryShopAuthMapById - ==> Parameters: 1(Long)
+2018-06-13 23:36:51.925 [main] DEBUG c.fan.o2o.dao.ShopAuthMapDao.queryShopAuthMapById - <==      Total: 1
+2018-06-13 23:36:51.927 [main] DEBUG c.f.o.d.ShopAuthMapDao.queryShopAuthCountByShopId - ==>  Preparing: SELECT count(1) FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ? 
+2018-06-13 23:36:51.928 [main] DEBUG c.f.o.d.ShopAuthMapDao.queryShopAuthCountByShopId - ==> Parameters: 1(Long)
+2018-06-13 23:36:51.959 [main] DEBUG c.f.o.d.ShopAuthMapDao.queryShopAuthCountByShopId - <==      Total: 1
+2018-06-13 23:36:51.965 [main] DEBUG c.f.o.d.S.queryShopAuthMapListByShopId - ==>  Preparing: SELECT smap.shop_auth_id, smap.title, smap.title_flag, smap.create_time, smap.last_edit_time, smap.enable_status, p.user_id, p.name, s.shop_id, s.shop_name FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ? LIMIT ?,?; 
+2018-06-13 23:36:51.966 [main] DEBUG c.f.o.d.S.queryShopAuthMapListByShopId - ==> Parameters: 1(Long), 0(Integer), 1(Integer)
+2018-06-13 23:36:52.001 [main] DEBUG c.f.o.d.S.queryShopAuthMapListByShopId - <==      Total: 1
+2018-06-13 23:36:52.059 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.updateShopAuthMap - ==>  Preparing: UPDATE tb_shop_auth_map SET title=?, title_flag=?, enable_status=?, last_edit_time=? WHERE shop_auth_id=? 
+2018-06-13 23:36:52.067 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.updateShopAuthMap - ==> Parameters: CCO(String), 2(Integer), 1(Integer), 2018-06-13 23:36:51.0(Timestamp), 1(Long)
+2018-06-13 23:36:52.137 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.updateShopAuthMap - <==    Updates: 1
+2018-06-13 23:36:52.144 [main] DEBUG c.f.o.d.S.queryShopAuthMapListByShopId - ==>  Preparing: SELECT smap.shop_auth_id, smap.title, smap.title_flag, smap.create_time, smap.last_edit_time, smap.enable_status, p.user_id, p.name, s.shop_id, s.shop_name FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ? LIMIT ?,?; 
+2018-06-13 23:36:52.145 [main] DEBUG c.f.o.d.S.queryShopAuthMapListByShopId - ==> Parameters: 1(Long), 0(Integer), 1(Integer)
+2018-06-13 23:36:52.176 [main] DEBUG c.f.o.d.S.queryShopAuthMapListByShopId - <==      Total: 1
+2018-06-13 23:36:52.177 [main] DEBUG c.f.o.d.S.queryShopAuthMapListByShopId - ==>  Preparing: SELECT smap.shop_auth_id, smap.title, smap.title_flag, smap.create_time, smap.last_edit_time, smap.enable_status, p.user_id, p.name, s.shop_id, s.shop_name FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ? LIMIT ?,?; 
+2018-06-13 23:36:52.178 [main] DEBUG c.f.o.d.S.queryShopAuthMapListByShopId - ==> Parameters: 2(Long), 0(Integer), 1(Integer)
+2018-06-13 23:36:52.209 [main] DEBUG c.f.o.d.S.queryShopAuthMapListByShopId - <==      Total: 1
+2018-06-13 23:36:52.209 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.deleteShopAuthMap - ==>  Preparing: DELETE FROM tb_shop_auth_map WHERE shop_auth_id = ? 
+2018-06-13 23:36:52.210 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.deleteShopAuthMap - ==> Parameters: 1(Long)
+2018-06-13 23:36:52.272 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.deleteShopAuthMap - <==    Updates: 1
+2018-06-13 23:36:52.275 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.deleteShopAuthMap - ==>  Preparing: DELETE FROM tb_shop_auth_map WHERE shop_auth_id = ? 
+2018-06-13 23:36:52.276 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.deleteShopAuthMap - ==> Parameters: 2(Long)
+2018-06-13 23:36:52.352 [main] DEBUG com.fan.o2o.dao.ShopAuthMapDao.deleteShopAuthMap - <==    Updates: 1
